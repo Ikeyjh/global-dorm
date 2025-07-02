@@ -53,7 +53,7 @@ Watch the full demo on [YouTube](https://youtu.be/K7h_73U_Oiw).
 
 [![Watch the video](https://img.youtube.com/vi/K7h_73U_Oiw/0.jpg)](https://youtu.be/K7h_73U_Oiw)
 
-*This 3-minute walkthrough covers the main features and demonstrates both the user-facing and admin functionality.*
+*This short demonstration covers the main features and demonstrates both the user-facing, backend, and admin functionality.*
 ---
 
 ## 🚀 Getting Started
