@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- top nav bar-->
+        <div class="top-nav-bar">
+            <div class="global-dorm">Global Dorm</div>
+            <h2>Your Profile</h2>
+            <div>
+                <a href="index.html">
+                    <button>Home</button>
+                </a>
+                <button>Profile</button>
+            </div>
+        </div>
+        
+        <div class="cover-image"></div>
+        
+        <div class="profile-details-container">
+            <div class="main-big">
+                <form id="details-form">
+                    <h3>Sign Up</h3>
+                    <p>Enter First Name</p>
+                    <input id="fname" type="text" placeholder="enter your first name">
+                    <p>Enter Last Name</p>
+                    <input id="lname" type="text" placeholder="enter your last name">
+                    <p>Enter Phone Number</p>
+                    <input id="phone" type="text" placeholder="enter your phone number">
+                    <p>Enter Your Email Address</p>
+                    <input id="email" type="text" placeholder="enter your email address">
+                    <p>Enter Your University Postcode</p>
+                    <input id="postcode" type="text" placeholder="enter your university postcode">
+                    <button type="submit">Submit Details</button> 
+                </form> 
+                <script src="js/profile.js"></script>
+                <div id="applied-rooms">
+                    <h3>See Your Applications</h3>
+                    <div id="application-details"></div>  
+                    <script src="js/applications.js"></script>
+                </div> 
+                <div id="application-history">
+                    <div id="history"></div> 
+                    <script src="js/history.js"></script> 
+                </div>
+            </div>
+        </div>   
+    </body>
+</html>

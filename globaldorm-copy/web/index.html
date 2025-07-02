@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Global Dorm</title>
+
+        <script src="js/weather.js" defer></script>
+        <script src="js/crime.js" defer></script>
+        <script src="js/geocoding.js" defer></script>  
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg1tu4g1JYKUcKmkflSuGR_l8Wp7MmZCs&libraries=places&callback=initMap" async defer></script>
+        
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- top nav bar-->
+        <div class="top-nav-bar">
+            <div class="global-dorm">Global Dorm</div>
+            <div>
+                <button>Home</button>
+                <a href="profile.html">
+                    <button>Profile</button>
+                </a>
+            </div>
+        </div>
+        
+        <!-- cover Image -->
+        <div class="cover-image"></div>
+        
+        <!-- search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-rooms" placeholder="search for accommodation...">
+        </div>
+        
+        <!-- results -->
+        <div class="results"></div>
+        
+        <!-- room modal -->
+        <div id="roomModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                
+                <!-- display title and image -->
+                <h3 id="modalRoomName"></h3>
+                <img id="modalRoomImage" alt="roomImage">
+                
+                <!-- display accommodation details -->
+                <button class="modal-button" id="room-toggle">Accommodation Details</button>
+                <div id="distance">
+                    <p style="font-weight: bold; text-align: center">Note: ensure you have entered your details 
+                        in your profile page if you want to use the distance calculator
+                        (Nottingham selected by default)</p>
+                    <div class="distance-container">
+                        <div id="distance-result">
+                            <p style="text-align: center">distance between this accommodation and your university</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modalRoomDetails"></div>
+                
+                <!-- display Google Maps -->
+                <button class="modal-button" id="maps-toggle">Google Maps</button>
+                <div id="modalMapsDetails"> 
+                    <p style="text-align: center">Take a Look Around the Area</p> 
+                    <div id="maps"></div>
+                    
+                    <!-- map search bar -->
+                    <div class="geocode-div">
+                        <input id="location-input" class="map-search-bar" type="text" placeholder="Search for a location">
+                        <button id="geocodeButton">Select Location</button>
+                    </div>
+                </div>
+                
+                <button id="weather-toggle" class="modal-button">Weather Forecast</button>
+                <div id="modalWeatherDetails"></div>
+                
+                <button id="crime-toggle" class="modal-button">Local Crime Counts</button>
+                <div id="modalCrimeDetails"></div>
+                
+                <button id="application-toggle" class="modal-button">Apply For Room</button>
+                <div id="modalApplyDetails">
+                    <button id="apply-button">Click to Apply</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- scripts -->
+        <script src="js/rooms.js" defer></script>
+        <script src="js/distance.js" defer></script>
+        <script src="js/apply.js" defer></script>
+        <script src="js/maps.js" defer></script>
+    </body>
+</html>
