@@ -56,11 +56,11 @@ Watch the full demo on [YouTube](https://youtu.be/K7h_73U_Oiw).
 *This short demonstration covers the main features and demonstrates both the user-facing, backend, and admin functionality.*
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 This project was developed using **NetBeans 24** and is configured to run on **Apache Tomcat**. You can run the application locally in your IDE or deploy it on a server using a generated `.WAR` file.
 
-### 🔧 Requirements
+### Requirements
 - Java (JDK 17+)
 - NetBeans 24 (or any Java IDE that supports web apps)
 - Apache Tomcat
@@ -68,7 +68,7 @@ This project was developed using **NetBeans 24** and is configured to run on **A
 
 ---
 
-### 🗄️ MongoDB Setup
+### MongoDB Setup
 
 You will need to set up a **MongoDB Atlas** instance and create a database with the following **four collections**:
 
